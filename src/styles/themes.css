@@ -1,0 +1,56 @@
+/* ==========================================================================
+   SHIRO STATION — Cozy Anime Theme (Golden-Hour Sakura Station + Persona UI)
+   ========================================================================== */
+
+:root {
+  --theme-accent: #ffb347;
+  --theme-accent-alt: #7bae7f;
+  --theme-sakura: #ffb7c5;
+  --theme-bg: #2e2420;
+  --theme-surface: rgba(255, 248, 235, 0.94);
+  --theme-surface-dark: rgba(58, 43, 36, 0.9);
+  --theme-ink: #2b211c;
+  --theme-ink-invert: #fff8eb;
+  --theme-border: #5c4033;
+  --theme-skew: -3deg;
+  --theme-radius: 14px;
+  --theme-halftone-opacity: 0.08;
+}
+
+/* Anime / Persona-flavored HUD helper classes */
+.persona-skew {
+  transform: skewX(var(--theme-skew));
+}
+
+.persona-unskew {
+  transform: skewX(calc(var(--theme-skew) * -1));
+}
+
+.persona-halftone {
+  background-image: radial-gradient(currentColor 1.1px, transparent 1.1px);
+  background-size: 8px 8px;
+}
+
+.persona-panel {
+  background: var(--theme-surface);
+  color: var(--theme-ink);
+  border: 3px solid var(--theme-border);
+  border-radius: var(--theme-radius);
+  box-shadow: 5px 5px 0px var(--theme-border);
+}
+
+.persona-panel-dark {
+  background: var(--theme-surface-dark);
+  color: var(--theme-ink-invert);
+  border: 3px solid var(--theme-accent);
+  border-radius: var(--theme-radius);
+  box-shadow: 5px 5px 0px var(--theme-border);
+}
+
+.font-display {
+  font-family: 'Archivo Black', 'Noto Sans JP', sans-serif;
+}
+
+.font-jp {
+  font-family: 'Noto Sans JP', sans-serif;
+}
